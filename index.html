@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg text-bg-secondary">
+        <div class="container">
+            <div class="col">
+                <a class="navbar-brand text-light" href="#">Symfony Demo Application</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <a class="nav-link active text-light me-3" href="#"><i class="bi bi-house-door me-1"></i>Homepage</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 text-bg-light mt-5 px-2 py-4 rounded">
+                <h3 class="text-secondary"><i class="bi bi-lock me-2"></i>Secure Sign in</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Username</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-secondary"><i class="bi bi-box-arrow-right me-2"></i>Sign in</button>
+                </form>
+
+            </div>
+            <div class="col-6 mt-5 px-4">
+                <h3><i class="bi bi-arrow-left me-2"></i>Try either of the following users</h3>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th scope="col">Username</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">Role</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>john_user</td>
+                        <td>kitten</td>
+                        <td><span class="text-bg-secondary">ROLE_USER </span>(regular user)</td>
+                    </tr>
+                    <tr>
+                        <td>anna-admin</td>
+                        <td>kitten</td>
+                        <td><span class="text-bg-secondary">ROLE_ADMIN </span>(administrator)</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <div class="border rounded p-3 d-flex flex-column">
+                    <span class="mb-2"><span class="badge text-bg-success me-2">NOTE</span>If these users don't work, reload applications features by running this command from the terminal:</span>
+                    <p class="text-bg-secondary rounded p-2">$ php app/console doctrine:fixtures:load</p>
+                    <span class="mb-2"><span class="badge text-bg-success me-2">TIP</span>If you want to create new users, run this other command:</span>
+                    <p class="text-bg-secondary rounded p-2">$ php app/console app:add-user</p>
+                </div>
+            </div>
+
+            <div class="col-3 mt-5">
+                <p class="text-bg-light p-4 rounded">
+                    This is a demo application built in the Symfony Framework to illustrate the recommended way of developing Symfony applications.
+                    <br>
+                    <br>
+                    For more information, check out the <a href="#" class="link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Symfony Documentation</a>.
+                </p>
+                <p>
+                    Click on this button to show the source code of the Controller and template used to render this page.
+                </p>
+                <div class="d-flex flex-column">
+                    <button type="button" class="btn btn-secondary p-3 mb-5"><i class="bi bi-gear-wide-connected me-1"></i>Show source code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-bg-light fixed-bottom">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between">
+                <span>© 2015 - The Symfony Project <br>MIT License</span>`
+                <span>
+                    <i class="bi bi-twitter me-3 fs-3"></i>
+                    <i class="bi bi-facebook me-3 fs-3"></i>
+                    <i class="bi bi-wifi me-3 fs-3"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
